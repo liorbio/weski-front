@@ -1,0 +1,73 @@
+.header {
+    background-color: white;
+    padding-inline: 20px;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    height: 92px;
+    margin: auto;
+}
+
+.header form {
+    display: flex;
+}
+.header form div {
+    width: auto;
+}
+.header form span svg {
+    left: 33px;
+    top: 3px;
+    position: relative;
+}
+
+.inputBox {
+    box-sizing: border-box;
+
+    padding: 10px 16px;
+    padding-left: 40px;
+
+    width: 288.67px;
+    height: 44px;
+
+    border: 1px solid #C2C8D6;
+    border-radius: 8px;
+
+    margin-right: 8px;
+
+    font-size: 16px;
+    color: #525D7A;
+}
+
+.datePicker {
+    box-sizing: border-box;
+    width: 144.33px;
+    height: 44px;
+    border: 1px solid #C2C8D6;
+    padding-left: 16px;
+    font-size: 16px;
+    color: #525D7A;
+}
+.fromPicker {
+    border-radius: 8px 0px 0px 8px;
+}
+.toPicker {
+    border-radius: 0px 8px 8px 0px;
+    margin-right: 8px;
+}
+
+.searchButton {
+    width: 112px;
+    height: 44px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #1F5CF1;
+    color: #1F5CF1;
+    background-color: white;
+    border-radius: 8px;
+    font-size: 16px;
+}

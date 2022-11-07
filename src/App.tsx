@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header/Header';
+import SearchBody from './components/search/SearchBody';
+import { useHotels } from './hooks/useHotels';
 
 function App() {
+  const { performSearch, hotels, searchCriteria, loading, error } = useHotels();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header performSearch={performSearch} />
+      <SearchBody hotels={hotels} searchCriteria={searchCriteria} loading={loading} error={error} />
     </div>
   );
 }
